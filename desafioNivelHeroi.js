@@ -1,33 +1,27 @@
-let nome = "Rz Joga Sujo"
-let xp = 17777
-let nivel = ""
+let vitorias = 147
+let derrotas = 33
+let saldoVitorias = (vitorias - derrotas)
+let nivelRankeada = ""
 
-if (xp<=1000){
-  nivel= "bronze";
+if (saldoVitorias <= 10){
+  nivelRankeada = "ferro"
 }
-
-else if (xp<=2000){
-  nivel= "prata";
+else if (saldoVitorias <= 20){
+  nivelRankeada = "bronze"
 }
-
-else if (xp<=5000){
-  nivel= "ouro";
+else if (saldoVitorias <= 50){
+  nivelRankeada = "prata"
 }
-
-else if (xp<=7000){
-  nivel= "platina";
+else if (saldoVitorias <= 80){
+  nivelRankeada = "ouro"
 }
-
-else if (xp<=8000){
-  nivel= "ascendente";
+else if (saldoVitorias <= 90){
+  nivelRankeada = "diamante"
 }
-
-else if (xp<=10000){
-  nivel= "imortal";
+else if (saldoVitorias <= 100){
+  nivelRankeada = "lendário"
 }
+else (saldoVitorias >= 101)
+  nivelRankeada = "imortal"
 
-else {
-  nivel= "radiante";
-}
-
-console.log("O herói " + nome + " está no nível de " + nivel)
+  console.log ("O héroi tem de saldo " + saldoVitorias + " e está no nível de " + nivelRankeada)
